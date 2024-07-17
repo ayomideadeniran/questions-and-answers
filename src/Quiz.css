@@ -1,0 +1,138 @@
+/* App.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.App {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin-top: 1rem;
+}
+
+.question-section,
+.answer-section,
+.button-section {
+    margin: 20px 0;
+}
+
+.question-count {
+    font-size: 1.2em;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.question-text {
+    font-size: 2.3rem;
+}
+
+.answer-section button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #0047f9;
+    border: none;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    border-radius: 2px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.answer-section button:active {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.answer-section button:disabled {
+    background-color: #ddd;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.button-section button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 2rem;
+}
+
+.button-section button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.result-section {
+    margin-top: 20px;
+}
+
+.score {
+    font-size: 2em;
+    color: #4CAF50;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.restart-button button {
+    background-color: #bcc11e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 2rem;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.restart-button button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+
+.button-section .read-button {
+    color: rgb(15, 15, 0);
+    background-color: rgb(255, 234, 0);
+}
+
+
+.button-section .next-button {
+    color: black;
+    background-color: rgb(85, 255, 0);
+}
+
+.button-section .stop-button {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 42, 0);
+}
+
+
+
+
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
